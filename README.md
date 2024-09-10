@@ -62,7 +62,7 @@ Please follow the steps carefully and read each command before executing.
 ### Create S3 bucket for storing the KOPS objects.
 
 ```
-aws s3api create-bucket --bucket kops-abhi-storage --region us-east-1
+aws s3api create-bucket --bucket kops-rashmi-storage --region us-east-1
 ```
 
 ### Create the cluster 
@@ -80,7 +80,7 @@ kops edit cluster myfirstcluster.k8s.local
 Step 12: Build the cluster
 
 ```
-kops update cluster demok8scluster.k8s.local --yes --state=s3://kops-abhi-storage
+kops update cluster demok8scluster.k8s.local --yes --state=s3://kops-rashmi-storage
 ```
 
 This will take a few minutes to create............
